@@ -51,6 +51,12 @@ export default class FlickityComponent extends Component {
     onSwipe(index);
   }
 
+  componentWillReceiveProps(nextProps){
+    if(this.props.options.initialIndex !== nextProps.options.initialIndex){
+      this.flkty.selectCell(nextProps.options.initialIndex);
+    }
+  }
+
   render() {
     const { children, className, elementType } = this.props;
 
