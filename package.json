@@ -1,5 +1,5 @@
 {
-  "name": "@realestate/react-flickity-component",
+  "name": "react-flickity-component",
   "version": "0.0.4",
   "description": "react flickity component",
   "main": "./lib/index.js",
